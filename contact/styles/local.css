@@ -1,0 +1,16 @@
+@supports (display: grid) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 10rem 14fr;
+        /* width: 85vw; */
+    }
+
+    section#first {
+        grid-column: 2;
+        padding-right: 2rem;
+    }
+}
+
+section h2 {
+    margin-top: 0;
+}

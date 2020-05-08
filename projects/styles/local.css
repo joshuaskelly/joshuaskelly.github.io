@@ -1,0 +1,9 @@
+@supports (display: grid) {
+    #project-listing {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+}
+
+section h2 {
+    margin-top: 0;
+}

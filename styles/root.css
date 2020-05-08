@@ -1,0 +1,204 @@
+:root {
+    --dark: #222;
+}
+
+html {
+    display: block;
+    color: var(--dark);
+    font-size: 1.25rem;
+}
+
+body {
+    width: 70vw;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+header h1 {
+    font-size: 10vw;
+    font-weight: 100;
+    margin-bottom: 1.5vh;
+    margin-top: 6vh;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+section ul {
+    padding-left: 1.05rem;
+}
+
+@media (min-width: 700px) {
+    header h1 {
+        font-size: 4rem;
+    }
+}
+
+nav {
+    margin-bottom: 4vh;
+    border-top: 3px solid var(--dark);
+    padding: 0 1.5em;
+    padding-top: 0.85em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+article a img {
+    width: 100%;
+}
+
+article a h3 {
+    margin-top: 0.75em;
+    font-size: 1.05rem;
+    font-weight: 100;
+}
+
+article .game-info ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.75rem;
+}
+
+article .game-info ul li + li{
+    margin-top: 0.25em;
+}
+
+article * + * {
+    margin-top: 0.75em;
+}
+
+.call-to-action a {
+    width: 100%;
+    text-align: center;
+    background: var(--dark);
+    color: white;
+    padding: 0.75em;
+    text-transform: uppercase;
+}
+
+article.large {
+    grid-column: span 2;
+}
+
+article.large .call-to-action a {
+    width: calc((70vw - 2rem) / 2);
+}
+
+.call-to-action a {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+#project-header-section {
+    /* background: var(--dark); */
+    height: calc(70vw * 9 / 16);
+}
+
+@media screen and (orientation: portrait) {
+    #project-header-section {
+        height: calc(80vw * 9 / 16);
+    }
+}
+
+#project-header-section > * {
+    width: 100%;
+    height: 100%;
+}
+
+#project-listing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    grid-template-rows: auto;
+}
+
+@media screen and (orientation: portrait) {
+    body {
+        width: 80vw;
+    }
+
+      article.large {
+          grid-column: span 1;
+      }
+
+      #project-listing {
+          grid-template-columns: 1fr;
+          grid-gap: 4rem;
+      }
+
+      article.large .call-to-action a {
+        width: 100%;
+    }
+}
+
+footer {
+    margin-top: 2.5rem;
+}
+
+form div {
+    margin-bottom: 1.5rem;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+form label span {
+    color: #d00;
+}
+
+form input,
+form textarea {
+    font-size: 1.05rem;
+    font-family: sans-serif;
+    border: 1px solid var(--dark);
+    width: 100%;
+    padding: 0.5rem;
+    /* border-radius: 2px; */
+}
+
+form textarea {
+    height: 16vh;
+    /* font-family: sans-serif; */
+}
+
+form button {
+    font-size: 1.05rem;
+    font-family: serif;
+    color: var(--dark);
+    background: none;
+    border: 1px solid var(--dark);
+    padding: 0.5rem 1.5rem;
+    /* border-radius: 2px; */
+    font-family: sans-serif;
+    background: var(--dark);
+    color: white;
+    text-transform: uppercase;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.clickable {
+    cursor: pointer;
+}

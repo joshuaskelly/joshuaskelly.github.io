@@ -1,0 +1,35 @@
+.game-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+}
+
+.game-gallery img {
+    width: 100%;
+}
+
+#project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.call-to-action {
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-column: 2;
+}
+
+.game-info {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 0.75rem;
+}
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+#project-header-section h2 {
+    margin-top: 0;
+}
